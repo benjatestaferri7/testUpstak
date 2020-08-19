@@ -44,7 +44,7 @@ if($accion === 'crear') {
 }
 
 if($accion === 'login') {
-    // escribir codigo que loguee a los administradores
+    // escribir codigo que loguee a los admins
     
     include '../funciones/conexion.php';
     
