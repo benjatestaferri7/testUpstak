@@ -225,3 +225,20 @@ body.index {
     color: white;
     font-size: 1.2rem;
 }
+
+/** Barra de avance **/
+.barra-avance{
+    height: 30px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #F2F2F2;
+}
+.porcentaje{
+    width: 0;
+    height: 100%;
+    background-color: #00B762;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    transition: width .5s ease-in-out;
+}

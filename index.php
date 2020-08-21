@@ -64,19 +64,25 @@
                             <li id="tarea:<?php echo $tarea['id'] ?>" class="tarea">
                             <p><?php echo $tarea['nombre'] ?></p>
                                 <div class="acciones">
-                                    <i class"far fa-check-circle <?php echo ($tarea['estado'] === '1' ? 'completo' : '') ?>"></i>
-                                    <i class"fas fa-trash"></i>
+                                <i class="far fa-check-circle <?php echo ($tarea['estado'] === '1' ? 'completo' : '') ?>"></i>
+                                <i class="fas fa-trash"></i>
                                 </div>
                             </li>
                <?php    endforeach;
                     }
                     else{
                         //no hay tareas
-                        echo "<p>No hay tareas en este proyecto</p>";
+                        echo "<p class='lista-vacia'>No hay tareas en este proyecto</p>";
                     }
                 ?>
                   
             </ul>
+        </div>
+        <div class="avance">
+                    <h2>Avance del Proyecto:</h2>
+                    <div id="barra-avance" class="barra-avance">
+                        <div id="porcentaje" class="porcentaje"></div>
+                    </div>
         </div>
     </main>
 </div><!--.contenedor-->
